@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <title>Login</title>
+   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+   background-color: white;
+   font-family: Arial, sans-serif;
+}
+
+.form-card {
+   width: 300px;
+   margin: 0 auto;
+   padding: 20px;
+   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+   border-radius: 5px;
+}
+
+.title-login {
+   text-align: center;
+   color: #333;
+   margin-bottom: 20px;
+}
+
+.field {
+   margin-bottom: 20px;
+}
+
+.input-field {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+}
+
+.cpf {
+   letter-spacing: 3px;
+   mask-pattern: "999\.999\.999\-99";
+   mask-reverse: true;
+}
+
+.birthdate {
+   border: 1px solid #ddd;
+   border-radius: 5px;
+}
+
+.box-btn {
+   text-align: center;
+}
+
+.btn-login {
+   display: inline-block;
+   padding: 10px 20px;
+   color: white;
+   background-color: #007BFF;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.btn-login:hover {
+   background-color: #0056b3;
+}
+
+  </style>
+</head>
+<body>
+  <div class="form-card">
+      <form class="form" action="/get" method="GET">
+          <h2 class="title-login">Acesso Restrito</h2>
+          <div class="field">
+              <input type="text" class="input-field cpf" name="cpf" placeholder="CPF" autocomplete="off">
+          </div>
+          <div class="field">
+              <input type="date" class="input-field birthdate" name="birthdate" placeholder="Data de Nascimento">
+          </div>
+          <div class="box-btn">
+              <button class="btn-login" type="submit">Entrar</button>
+          </div>
+      </form>
+  </div>
+</body>
+</html>
+
+
